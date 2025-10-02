@@ -1,52 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charan Vijayagiri | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saicharan Vijayagiri · Cloud DevOps & Site Reliability Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Experienced Cloud DevOps & SRE with 10+ years building secure, scalable, and cost‑efficient platforms across AWS, Azure, and GCP. I design resilient CI/CD pipelines, Kubernetes platforms, and observability that keep products fast, reliable, and compliant.">
+  <script>
+    // Theme toggle with persistence
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Charan Vijayagiri</h1>
-    <p>Cloud & DevOps Engineer | .NET & Angular Developer | AI Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="hero__inner">
+      <div class="topbar">
+        <button id="themeToggle" aria-label="Toggle color theme">🌗 Theme</button>
+        <a class="resume-btn" href="resume.pdf" download>⬇️ Download Resume (PDF)</a>
+      </div>
+      <h1>Saicharan Vijayagiri</h1>
+      <h2>Cloud DevOps & Site Reliability Engineer</h2>
+      <p class="subtitle">Multi‑cloud (AWS | Azure | GCP) · Kubernetes · Terraform · Observability · Security</p>
+      <div class="contact">
+        <a href="mailto:saicharanv0@gmail.com">saicharanv0@gmail.com</a>
+        <span>·</span>
+        <a href="tel:508-596-4110">508-596-4110</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/charan-v-b51396119" target="_blank" rel="noopener">LinkedIn</a>
+        <span>·</span>
+        <a href="https://github.com/cherun204" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="cta-row">
+        <a class="cta" href="#skills">Explore My Skills</a>
+        <a class="cta ghost" href="#projects">View Projects</a>
+      </div>
+    </div>
+    <div class="bg-gradient"></div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a senior DevOps/SRE with 10+ years of experience across AWS, Azure, and GCP. I build reliable systems, scalable architectures, and love exploring AI + cloud-native solutions.</p>
-  </section>
+  <main>
+    <section id="summary" class="section">
+      <h3>Summary</h3>
+      <p>Experienced Cloud DevOps & SRE with 10+ years building secure, scalable, and cost‑efficient platforms across AWS, Azure, and GCP. I design resilient CI/CD pipelines, Kubernetes platforms, and observability that keep products fast, reliable, and compliant.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>☁️ Cloud: AWS, Azure, GCP, OpenShift</li>
-      <li>⚙️ DevOps: Terraform, Helm, Ansible, Jenkins, GitHub Actions</li>
-      <li>💻 Languages: C#, Python, Go, SQL, JavaScript</li>
-      <li>📊 Monitoring: Datadog, ELK, Prometheus, Grafana</li>
-    </ul>
-  </section>
+    <section id="skills" class="section">
+      <h3>Skills & Technologies</h3>
+      <div class="skills-grid"><div class="card"><h4>Cloud</h4><ul><li>AWS</li><li>Azure</li><li>GCP</li><li>OpenShift</li><li>Rancher</li></ul></div><div class="card"><h4>Kubernetes</h4><ul><li>EKS</li><li>AKS</li><li>GKE</li><li>Istio</li><li>Argo CD</li></ul></div><div class="card"><h4>DevOps & IaC</h4><ul><li>Terraform/OpenTofu</li><li>Ansible</li><li>Helm</li><li>GitHub Actions</li><li>Jenkins</li></ul></div><div class="card"><h4>Programming</h4><ul><li>Python</li><li>Go</li><li>Groovy</li><li>SQL</li><li>Bash</li><li>PowerShell</li></ul></div><div class="card"><h4>Observability</h4><ul><li>Prometheus</li><li>Grafana</li><li>ELK/EFK</li><li>Datadog</li><li>OpenTelemetry</li><li>Splunk</li></ul></div><div class="card"><h4>Security</h4><ul><li>Zero Trust</li><li>RBAC/ABAC</li><li>MFA/SSO</li><li>SAST/DAST</li><li>Vault</li></ul></div><div class="card"><h4>Data & MQ</h4><ul><li>PostgreSQL</li><li>MongoDB</li><li>DynamoDB</li><li>Cassandra</li><li>Kafka</li><li>Redis</li></ul></div></div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Coming soon… (link to GitHub repos)</p>
-  </section>
+    <section id="projects" class="section">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+    <a class="card project" href="https://github.com/cherun204" target="_blank" rel="noopener">
+      <h4>FinBrief‑AI</h4>
+      <p>AI‑powered finance news summarizer with personalized feeds and cost‑efficient serverless backend.</p>
+      <div class="tags"><span class='tag'>Next.js</span><span class='tag'>LLM</span><span class='tag'>AWS Lambda</span><span class='tag'>Bedrock/SageMaker</span><span class='tag'>Edge</span></div>
+    </a>
+    
+    <a class="card project" href="https://github.com/cherun204" target="_blank" rel="noopener">
+      <h4>Multi‑Region EKS Platform</h4>
+      <p>Production‑grade Kubernetes reference with GitOps, service mesh, and automated DR.</p>
+      <div class="tags"><span class='tag'>EKS</span><span class='tag'>Argo CD</span><span class='tag'>Istio</span><span class='tag'>Terraform</span><span class='tag'>OpenTelemetry</span></div>
+    </a>
+    
+    <a class="card project" href="https://github.com/cherun204" target="_blank" rel="noopener">
+      <h4>Neuotics Pharma</h4>
+      <p>Modern pharma website with CI/CD, secure endpoints, and observability baked in.</p>
+      <div class="tags"><span class='tag'>Azure</span><span class='tag'>AKS</span><span class='tag'>Key Vault</span><span class='tag'>Datadog</span><span class='tag'>CDN</span></div>
+    </a>
+    
+    <a class="card project" href="https://github.com/cherun204" target="_blank" rel="noopener">
+      <h4>Student Loan Eligibility API</h4>
+      <p>Scalable API with auth, rate‑limits, and analytics; SPA frontend for eligibility checks.</p>
+      <div class="tags"><span class='tag'>ASP.NET Core</span><span class='tag'>PostgreSQL</span><span class='tag'>Redis</span><span class='tag'>React</span></div>
+    </a>
+    </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:charanvijay195@gmail.com">charanvijay195@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/charanvijayagiri">linkedin.com/in/charanvijayagiri</a></p>
-    <p>GitHub: <a href="https://github.com/cherun204">github.com/cherun204</a></p>
-  </section>
+    <section id="experience" class="section">
+      <h3>Experience</h3>
+      <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-item__dot"></div>
+      <div class="timeline-item__content">
+        <div class="row">
+          <h4>Sr Cloud Engineer · <span class="company">UnitedHealthcare</span></h4>
+          <span class="dates">Aug 2023 – Present</span>
+        </div>
+        <ul><li>Architected multi‑region Kubernetes (EKS/AKS/GKE) with DR/RTO<5m & 99.99% availability.</li><li>Implemented GitOps & progressive delivery (Argo CD, Istio; Canary/Blue‑Green).</li><li>Built observability pipelines (OpenTelemetry, ELK, Datadog) enabling rapid RCA.</li><li>Designed Zero Trust policies, SSO/MFA (Entra ID/Okta/AWS), and hardened workloads.</li></ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-item__dot"></div>
+      <div class="timeline-item__content">
+        <div class="row">
+          <h4>Lead SRE/DevOps Engineer · <span class="company">Insightfinder AI</span></h4>
+          <span class="dates">Aug 2022 – Aug 2023</span>
+        </div>
+        <ul><li>Deployed GPU‑backed K8s for ML training/inference; automated with Terraform/CDK.</li><li>Built Kafka streaming pipelines handling high‑throughput event workloads.</li><li>Implemented SOC2‑aligned monitoring with Prometheus/Grafna/ELK; cut MTTR by 50%.</li><li>Led incident response & recovery playbooks, reducing downtime by 40%.</li></ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-item__dot"></div>
+      <div class="timeline-item__content">
+        <div class="row">
+          <h4>Lead SRE · <span class="company">Onetrust LLC</span></h4>
+          <span class="dates">Aug 2021 – Aug 2022</span>
+        </div>
+        <ul><li>Designed HA microservices on EKS with GitOps rollouts and fast rollbacks.</li><li>Standardized IaC modules (CDK/Terraform) for repeatable, auditable infra.</li><li>Built end‑to‑end telemetry (Prometheus/Grafana/ELK/Datadog) to improve DTR by 40%.</li></ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-item__dot"></div>
+      <div class="timeline-item__content">
+        <div class="row">
+          <h4>DevOps Engineer / System Administrator · <span class="company">GEICO Insurance</span></h4>
+          <span class="dates">Jun 2016 – Aug 2021</span>
+        </div>
+        <ul><li>Owned CI/CD with Jenkins/Azure DevOps; reusable pipelines for multiple teams.</li><li>Migrated legacy DC apps to Azure & K8s; improved reliability & scalability.</li><li>Centralized logs with Fluentd + Elasticsearch + Kibana for faster debugging.</li></ul>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <div class="contact-cards">
+        <a class="card link" href="mailto:saicharanv0@gmail.com">📧 Email Me</a>
+        <a class="card link" href="https://www.linkedin.com/in/charan-v-b51396119" target="_blank">🔗 LinkedIn</a>
+        <a class="card link" href="https://github.com/cherun204" target="_blank">💻 GitHub</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Charan Vijayagiri</p>
+    <p>© Saicharan Vijayagiri · Built for GitHub Pages · Fast, responsive, and accessible.</p>
   </footer>
+
+  <script>
+    // Theme toggle button
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      const root = document.documentElement;
+      const current = root.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
 </body>
 </html>
